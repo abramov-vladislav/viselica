@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Игра "Виселица"</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Игра "Виселица"</h1>
-        <div class="welcome-text">
-            <p>Добро пожаловать в игру "Виселица"!</p>
-            <p>Цель игры: угадать загаданное слово по буквам.</p>
-            <p>Правила:</p>
-            <ul>
-                <li>У вас есть 6 попыток до проигрыша</li>
-                <li>Вводите по одной букве русского алфавита</li>
-                <li>Повторный ввод буквы не считается ошибкой</li>
-            </ul>
-        </div>
-        <div class="button-container">
-            <a href="/new-game" class="btn btn-primary">Начать игру</a>
-        </div>
+<div class="container">
+    <h1>Игра "Виселица"</h1>
+    <div class="welcome-text">
+        <p>Добро пожаловать в игру "Виселица"!</p>
+        <p>Цель игры: угадать загаданное слово по буквам.</p>
+        <p>Правила:</p>
+        <ul>
+            <li>У вас есть 6 попыток до проигрыша</li>
+            <li>Вводите по одной букве русского алфавита</li>
+            <li>Повторный ввод буквы не считается ошибкой</li>
+        </ul>
     </div>
+    <div class="button-container">
+        <a class="btn btn-primary" href="/new-game">Начать игру</a>
+    </div>
+</div>
 </body>
 </html> 

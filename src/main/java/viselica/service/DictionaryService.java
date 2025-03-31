@@ -1,7 +1,7 @@
 package viselica.service;
 
-import org.springframework.stereotype.Service;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Service;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,9 +15,9 @@ import java.util.Random;
 @Service
 @Slf4j
 public class DictionaryService {
+    private static final int MIN_WORD_LENGTH = 4;
     private final List<String> words = new ArrayList<>();
     private final Random random = new Random();
-    private static final int MIN_WORD_LENGTH = 4;
 
     public DictionaryService() {
         loadWords();
