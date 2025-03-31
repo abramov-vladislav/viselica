@@ -1,6 +1,7 @@
 package viselica;
 
 import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,8 @@ public class GameService {
 
     private final List<String> words = new ArrayList<>();
     private final Random random = new Random();
+    // Получение текущей игры
+    @Getter
     private Game currentGame;
     public GameService() {
         loadWords();
@@ -76,11 +79,6 @@ public class GameService {
     public void newGame() {
         currentGame = new Game(getRandomWord());
         log.info("Новая игра создана, загадано слово: {}", currentGame.getSecretWord());
-    }
-
-    // Получение текущей игры
-    public Game getCurrentGame() {
-        return currentGame;
     }
 
     // Сделать ход в игре
