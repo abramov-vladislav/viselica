@@ -33,12 +33,13 @@
 
 ## Технологии
 
-* Java 11
-* Spring Boot 2.7
+* Java 23
+* Spring Boot 3.2.3 (с Spring Framework 6.2.1)
 * Spring Web MVC
 * Thymeleaf
-* Lombok
+* Lombok 1.18.38
 * Maven
+* Jakarta EE 10
 
 ## Как запустить
 
@@ -90,4 +91,8 @@ java -jar target/viselica-1.0-SNAPSHOT.jar
 - `@Getter` - для автоматической генерации геттеров
 - `@Setter` - для автоматической генерации сеттеров
 - `@Slf4j` - для генерации логгера
-- `@Service` - для обозначения сервисных классов 
+- `@Service` - для обозначения сервисных классов
+
+## Примечания по Java 23
+
+Для работы с Java 23 включены виртуальные потоки через настройку `spring.threads.virtual.enabled=true` в application.properties. 
