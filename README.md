@@ -95,4 +95,5 @@ java -jar target/viselica-1.0-SNAPSHOT.jar
 
 ## Примечания по Java 23
 
-Для работы с Java 23 включены виртуальные потоки через настройку `spring.threads.virtual.enabled=true` в application.properties. 
+Для работы с Java 23 включены виртуальные потоки через настройку `spring.threads.virtual.enabled=true` в
+application.properties. 
